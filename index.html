@@ -1,0 +1,909 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#6d28d9">
+
+    <title>Mathematics | Peluang Kombinasi</title>
+
+    <meta
+        name="description"
+        content="Belajar peluang, kombinasi, dan permutasi melalui 7 soal beserta pembahasannya."
+    >
+
+    <!-- MathJax untuk menampilkan rumus matematika -->
+    <script>
+        MathJax = {
+            tex: {
+                inlineMath: [['\\(', '\\)']],
+                displayMath: [['\\[', '\\]']]
+            },
+            options: {
+                skipHtmlTags: [
+                    'script', 'noscript', 'style',
+                    'textarea', 'pre', 'code'
+                ]
+            },
+            chtml: {
+                scale: 1.05
+            }
+        };
+    </script>
+
+    <script
+        defer
+        src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js">
+    </script>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- DEKORASI LATAR -->
+    <div class="background-decoration decoration-one"></div>
+    <div class="background-decoration decoration-two"></div>
+
+    <!-- =========================
+         HALAMAN PEMBUKA
+    ========================== -->
+    <header class="hero" id="beranda">
+
+        <div class="hero-content">
+
+            <div class="hero-label">
+                <span class="label-dot"></span>
+                MATHEMATICS LEARNING SPACE
+            </div>
+
+            <h1>
+                Tugas Matematika
+                <span>Peluang, Kombinasi, dan Pemutasi</span>
+            </h1>
+
+            <p class="hero-description">
+                Berikut disajikan 5 soal tentang peluang, kombinasi,
+                 dan permutasi yang dilengkapi dengan jawaban serta 
+                pembahasan secara lengkap dan langkah demi langkah.
+            </p>
+
+            <div class="hero-info">
+                <span>✦ 5 Soal</span>
+                <span>✦ Jawaban Lengkap</span>
+                <span>✦ Rumus Matematika</span>
+            </div>
+
+            <button
+                class="start-button"
+                id="startButton"
+                type="button">
+                Mulai Belajar
+                <span aria-hidden="true">→</span>
+            </button>
+
+            <p class="hero-note">
+                BY MUHAMMAD KHADAPI 
+            </p>
+
+        </div>
+
+        <div class="hero-visual" aria-hidden="true">
+
+            <div class="orbit orbit-one"></div>
+            <div class="orbit orbit-two"></div>
+
+            <div class="floating-symbol symbol-one">+</div>
+            <div class="floating-symbol symbol-two">÷</div>
+            <div class="floating-symbol symbol-three">×</div>
+            <div class="floating-symbol symbol-four">√</div>
+
+            <div class="math-card">
+                <span class="math-card-label">LET'S LEARN</span>
+
+                <div class="hero-formula">
+                    \[
+                    P(A)=\frac{n(A)}{n(S)}
+                    \]
+                </div>
+
+                <div class="math-card-line"></div>
+
+                <p>Understand the process.</p>
+                <p>Discover the answer.</p>
+            </div>
+
+        </div>
+
+    </header>
+
+
+    <!-- =========================
+         BAGIAN MATERI
+    ========================== -->
+    <main class="learning-section" id="materi" hidden>
+
+        <div class="section-heading">
+
+            <div class="section-label">
+                YOUR LEARNING JOURNEY
+            </div>
+
+            <h2>
+                Peluang &amp;
+                <span>Kombinasi</span>
+            </h2>
+
+            <p>
+                Baca setiap soal, pahami jawabannya, lalu ikuti
+                proses perhitungannya sampai selesai.
+            </p>
+
+            <div class="lesson-progress">
+                <span>Materi pembelajaran</span>
+                <span>7 Soal</span>
+            </div>
+
+            <div class="lesson-progress-track">
+                <div class="lesson-progress-fill"></div>
+            </div>
+
+        </div>
+
+
+        <!-- SOAL 1 -->
+        <article class="question-card">
+
+            <div class="question-top">
+                <span class="question-number">01</span>
+                <span class="question-tag">KOMBINASI</span>
+            </div>
+
+            <h3 class="question-title">Memilih Anggota Tim</h3>
+
+            <p class="question-text">
+                Di kelas XII-5 terdapat 12 siswa yang akan
+                mengikuti seleksi lomba matematika. Guru memilih
+                5 siswa untuk menjadi anggota tim.
+                Berapa banyak cara memilihnya?
+            </p>
+
+            <div class="answer-box">
+                <span class="answer-label">✦ JAWABAN AKHIR</span>
+                <p>792 cara</p>
+            </div>
+
+            <div class="explanation">
+                <h4><span>✦</span> Pembahasan</h4>
+
+                <p class="explanation-intro">
+                    Karena urutan pemilihan anggota tim tidak
+                    diperhatikan, kita menggunakan rumus kombinasi.
+                </p>
+
+                <div class="step">
+                    <span class="step-number">01</span>
+                    <div class="step-content">
+                        <h5>Diketahui</h5>
+                        <p>Jumlah siswa \(n=12\), siswa yang dipilih \(r=5\).</p>
+                    </div>
+                </div>
+
+                <div class="step">
+                    <span class="step-number">02</span>
+                    <div class="step-content">
+                        <h5>Rumus kombinasi</h5>
+                        <div class="formula">
+                            \[
+                            C(n,r)=\frac{n!}{r!(n-r)!}
+                            \]
+                        </div>
+                    </div>
+                </div>
+
+                <div class="step">
+                    <span class="step-number">03</span>
+                    <div class="step-content">
+                        <h5>Masukkan nilai</h5>
+                        <div class="formula">
+                            \[
+                            C(12,5)=\frac{12!}{5!(12-5)!}
+                            \]
+                        </div>
+                        <div class="formula">
+                            \[
+                            =\frac{12!}{5!\,7!}
+                            \]
+                        </div>
+                    </div>
+                </div>
+
+                <div class="step">
+                    <span class="step-number">04</span>
+                    <div class="step-content">
+                        <h5>Hitung hasilnya</h5>
+                        <div class="formula">
+                            \[
+                            =\frac{12\times11\times10\times9\times8}
+                            {5\times4\times3\times2\times1}
+                            \]
+                        </div>
+                        <div class="formula">
+                            \[
+                            =792
+                            \]
+                        </div>
+                    </div>
+                </div>
+
+                <div class="conclusion">
+                    <strong>Kesimpulan</strong>
+                    <p>
+                        Jadi, terdapat <b>792 cara</b> untuk
+                        memilih 5 siswa dari 12 siswa.
+                    </p>
+                </div>
+            </div>
+        </article>
+
+
+        <!-- SOAL 2 -->
+        <article class="question-card">
+
+            <div class="question-top">
+                <span class="question-number">02</span>
+                <span class="question-tag">PELUANG KOMBINASI</span>
+            </div>
+
+            <h3 class="question-title">Pengambilan Bola</h3>
+
+            <p class="question-text">
+                Sebuah kotak berisi 6 bola biru dan 4 bola kuning.
+                Diambil 3 bola sekaligus secara acak.
+                Berapakah peluang terambil tepat 2 bola biru
+                dan 1 bola kuning?
+            </p>
+
+            <div class="answer-box">
+                <span class="answer-label">✦ JAWABAN AKHIR</span>
+                <p>\(\frac{1}{2}=50\%\)</p>
+            </div>
+
+            <div class="explanation">
+                <h4><span>✦</span> Pembahasan</h4>
+
+                <p class="explanation-intro">
+                    Kita menghitung seluruh kemungkinan pengambilan
+                    3 bola, kemudian membandingkannya dengan
+                    kemungkinan mendapatkan 2 bola biru dan 1 kuning.
+                </p>
+
+                <div class="step">
+                    <span class="step-number">01</span>
+                    <div class="step-content">
+                        <h5>Diketahui</h5>
+                        <p>
+                            Bola biru = 6, bola kuning = 4,
+                            total bola = 10, dan diambil 3 bola.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="step">
+                    <span class="step-number">02</span>
+                    <div class="step-content">
+                        <h5>Menghitung ruang sampel</h5>
+                        <div class="formula">
+                            \[
+                            n(S)=C(10,3)
+                            \]
+                        </div>
+                        <div class="formula">
+                            \[
+                            =\frac{10!}{3!\,7!}=120
+                            \]
+                        </div>
+                    </div>
+                </div>
+
+                <div class="step">
+                    <span class="step-number">03</span>
+                    <div class="step-content">
+                        <h5>Menghitung kejadian yang diinginkan</h5>
+                        <div class="formula">
+                            \[
+                            n(A)=C(6,2)\times C(4,1)
+                            \]
+                        </div>
+                        <div class="formula">
+                            \[
+                            =15\times4=60
+                            \]
+                        </div>
+                    </div>
+                </div>
+
+                <div class="step">
+                    <span class="step-number">04</span>
+                    <div class="step-content">
+                        <h5>Menghitung peluang</h5>
+                        <div class="formula">
+                            \[
+                            P(A)=\frac{n(A)}{n(S)}
+                            \]
+                        </div>
+                        <div class="formula">
+                            \[
+                            =\frac{60}{120}=\frac{1}{2}=50\%
+                            \]
+                        </div>
+                    </div>
+                </div>
+
+                <div class="conclusion">
+                    <strong>Kesimpulan</strong>
+                    <p>
+                        Jadi, peluang terambil tepat 2 bola biru
+                        dan 1 bola kuning adalah <b>50%</b>.
+                    </p>
+                </div>
+            </div>
+        </article>
+
+
+        <!-- SOAL 3 -->
+        <article class="question-card">
+
+            <div class="question-top">
+                <span class="question-number">03</span>
+                <span class="question-tag">PERMUTASI &amp; PELUANG</span>
+            </div>
+
+            <h3 class="question-title">Pemilihan Pengurus</h3>
+
+            <p class="question-text">
+                Terdapat 8 calon pengurus. Akan dipilih ketua,
+                wakil ketua, dan sekretaris. Berapakah peluang
+                calon A menjadi ketua dan calon B menjadi sekretaris?
+            </p>
+
+            <div class="answer-box">
+                <span class="answer-label">✦ JAWABAN AKHIR</span>
+                <p>\(\frac{1}{56}\approx1{,}79\%\)</p>
+            </div>
+
+            <div class="explanation">
+                <h4><span>✦</span> Pembahasan</h4>
+
+                <p class="explanation-intro">
+                    Karena setiap jabatan berbeda, posisi pengurus
+                    diperhatikan. Kita menggunakan prinsip permutasi.
+                </p>
+
+                <div class="step">
+                    <span class="step-number">01</span>
+                    <div class="step-content">
+                        <h5>Diketahui</h5>
+                        <p>
+                            Ada 8 calon. A harus menjadi ketua,
+                            sedangkan B harus menjadi sekretaris.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="step">
+                    <span class="step-number">02</span>
+                    <div class="step-content">
+                        <h5>Menghitung ruang sampel</h5>
+                        <div class="formula">
+                            \[
+                            n(S)=8\times7\times6=336
+                            \]
+                        </div>
+                    </div>
+                </div>
+
+                <div class="step">
+                    <span class="step-number">03</span>
+                    <div class="step-content">
+                        <h5>Menghitung kejadian</h5>
+                        <p>
+                            Ketua sudah ditetapkan A dan sekretaris B.
+                            Wakil dipilih dari 6 calon lainnya.
+                        </p>
+                        <div class="formula">
+                            \[
+                            n(A)=1\times6\times1=6
+                            \]
+                        </div>
+                    </div>
+                </div>
+
+                <div class="step">
+                    <span class="step-number">04</span>
+                    <div class="step-content">
+                        <h5>Menghitung peluang</h5>
+                        <div class="formula">
+                            \[
+                            P(A)=\frac{6}{336}=\frac{1}{56}
+                            \]
+                        </div>
+                    </div>
+                </div>
+
+                <div class="conclusion">
+                    <strong>Kesimpulan</strong>
+                    <p>
+                        Jadi, peluang A menjadi ketua dan B menjadi
+                        sekretaris adalah <b>\(\frac{1}{56}\)</b>.
+                    </p>
+                </div>
+            </div>
+        </article>
+
+
+        <!-- SOAL 4 -->
+        <article class="question-card">
+
+            <div class="question-top">
+                <span class="question-number">04</span>
+                <span class="question-tag">PELUANG KOMBINASI</span>
+            </div>
+
+            <h3 class="question-title">Pemilihan Anggota Klub</h3>
+
+            <p class="question-text">
+                Klub memiliki 7 siswa yang menyukai basket,
+                5 siswa yang menyukai voli, dan 4 siswa yang
+                menyukai bulu tangkis. Dipilih 4 siswa secara acak.
+                Berapakah peluang tepat 3 siswa basket dan 1 siswa voli?
+            </p>
+
+            <div class="answer-box">
+                <span class="answer-label">✦ JAWABAN AKHIR</span>
+                <p>\(\frac{5}{52}\approx9{,}62\%\)</p>
+            </div>
+
+            <div class="explanation">
+                <h4><span>✦</span> Pembahasan</h4>
+
+                <p class="explanation-intro">
+                    Pilih 3 siswa dari kelompok basket dan 1 siswa
+                    dari kelompok voli. Kemudian bandingkan dengan
+                    semua kemungkinan pemilihan 4 siswa.
+                </p>
+
+                <div class="step">
+                    <span class="step-number">01</span>
+                    <div class="step-content">
+                        <h5>Diketahui</h5>
+                        <p>
+                            Basket = 7, voli = 5, bulu tangkis = 4.
+                            Total siswa = 16.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="step">
+                    <span class="step-number">02</span>
+                    <div class="step-content">
+                        <h5>Ruang sampel</h5>
+                        <div class="formula">
+                            \[
+                            n(S)=C(16,4)
+                            \]
+                        </div>
+                        <div class="formula">
+                            \[
+                            =\frac{16!}{4!\,12!}=1820
+                            \]
+                        </div>
+                    </div>
+                </div>
+
+                <div class="step">
+                    <span class="step-number">03</span>
+                    <div class="step-content">
+                        <h5>Kejadian yang diinginkan</h5>
+                        <div class="formula">
+                            \[
+                            n(A)=C(7,3)\times C(5,1)
+                            \]
+                        </div>
+                        <div class="formula">
+                            \[
+                            =35\times5=175
+                            \]
+                        </div>
+                    </div>
+                </div>
+
+                <div class="step">
+                    <span class="step-number">04</span>
+                    <div class="step-content">
+                        <h5>Menghitung peluang</h5>
+                        <div class="formula">
+                            \[
+                            P(A)=\frac{175}{1820}=\frac{5}{52}
+                            \]
+                        </div>
+                        <div class="formula">
+                            \[
+                            \approx9{,}62\%
+                            \]
+                        </div>
+                    </div>
+                </div>
+
+                <div class="conclusion">
+                    <strong>Kesimpulan</strong>
+                    <p>
+                        Jadi, peluang terpilih tepat 3 siswa basket
+                        dan 1 siswa voli adalah <b>sekitar 9,62%</b>.
+                    </p>
+                </div>
+            </div>
+        </article>
+
+
+        <!-- SOAL 5 -->
+        <article class="question-card">
+
+            <div class="question-top">
+                <span class="question-number">05</span>
+                <span class="question-tag">PELUANG KOMBINASI</span>
+            </div>
+
+            <h3 class="question-title">Memilih Siswa Perempuan</h3>
+
+            <p class="question-text">
+                Dalam suatu kelas terdapat 8 siswa laki-laki
+                dan 6 siswa perempuan. Dipilih 4 siswa secara acak.
+                Berapakah peluang terpilih paling sedikit
+                3 siswa perempuan?
+            </p>
+
+            <div class="answer-box">
+                <span class="answer-label">✦ JAWABAN AKHIR</span>
+                <p>\(\frac{25}{143}\approx17{,}48\%\)</p>
+            </div>
+
+            <div class="explanation">
+                <h4><span>✦</span> Pembahasan</h4>
+
+                <p class="explanation-intro">
+                    Paling sedikit 3 perempuan berarti terdapat dua
+                    kemungkinan: tepat 3 perempuan dan 1 laki-laki,
+                    atau tepat 4 perempuan.
+                </p>
+
+                <div class="step">
+                    <span class="step-number">01</span>
+                    <div class="step-content">
+                        <h5>Diketahui</h5>
+                        <p>
+                            Laki-laki = 8, perempuan = 6,
+                            total siswa = 14, dan dipilih 4 siswa.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="step">
+                    <span class="step-number">02</span>
+                    <div class="step-content">
+                        <h5>Ruang sampel</h5>
+                        <div class="formula">
+                            \[
+                            n(S)=C(14,4)=1001
+                            \]
+                        </div>
+                    </div>
+                </div>
+
+                <div class="step">
+                    <span class="step-number">03</span>
+                    <div class="step-content">
+                        <h5>Kasus pertama: 3 perempuan dan 1 laki-laki</h5>
+                        <div class="formula">
+                            \[
+                            C(6,3)\times C(8,1)
+                            \]
+                        </div>
+                        <div class="formula">
+                            \[
+                            =20\times8=160
+                            \]
+                        </div>
+                    </div>
+                </div>
+
+                <div class="step">
+                    <span class="step-number">04</span>
+                    <div class="step-content">
+                        <h5>Kasus kedua: 4 perempuan</h5>
+                        <div class="formula">
+                            \[
+                            C(6,4)\times C(8,0)
+                            \]
+                        </div>
+                        <div class="formula">
+                            \[
+                            =15\times1=15
+                            \]
+                        </div>
+                    </div>
+                </div>
+
+                <div class="step">
+                    <span class="step-number">05</span>
+                    <div class="step-content">
+                        <h5>Jumlah kejadian</h5>
+                        <div class="formula">
+                            \[
+                            n(A)=160+15=175
+                            \]
+                        </div>
+                    </div>
+                </div>
+
+                <div class="step">
+                    <span class="step-number">06</span>
+                    <div class="step-content">
+                        <h5>Menghitung peluang</h5>
+                        <div class="formula">
+                            \[
+                            P(A)=\frac{175}{1001}=\frac{25}{143}
+                            \]
+                        </div>
+                        <div class="formula">
+                            \[
+                            \approx17{,}48\%
+                            \]
+                        </div>
+                    </div>
+                </div>
+
+                <div class="conclusion">
+                    <strong>Kesimpulan</strong>
+                    <p>
+                        Jadi, peluang terpilih paling sedikit 3 siswa
+                        perempuan adalah <b>sekitar 17,48%</b>.
+                    </p>
+                </div>
+            </div>
+        </article>
+
+
+        <!-- SOAL 6
+        <article class="question-card">
+
+            <div class="question-top">
+                <span class="question-number">06</span>
+                <span class="question-tag">PELUANG KOMBINASI</span>
+            </div>
+
+            <h3 class="question-title">Memilih Buku</h3>
+
+            <p class="question-text">
+                Di perpustakaan terdapat 9 buku novel dan 5 buku
+                komik. Seorang siswa mengambil 4 buku secara acak.
+                Berapakah peluang terambil tepat 2 novel dan 2 komik?
+            </p>
+
+            <div class="answer-box">
+                <span class="answer-label">✦ JAWABAN AKHIR</span>
+                <p>\(\frac{360}{1001}\approx35{,}96\%\)</p>
+            </div>
+
+            <div class="explanation">
+                <h4><span>✦</span> Pembahasan</h4>
+
+                <p class="explanation-intro">
+                    Kita memilih 2 novel dari 9 novel dan 2 komik
+                    dari 5 komik, kemudian membandingkannya dengan
+                    semua cara memilih 4 buku dari 14 buku.
+                </p>
+
+                <div class="step">
+                    <span class="step-number">01</span>
+                    <div class="step-content">
+                        <h5>Diketahui</h5>
+                        <p>
+                            Novel = 9, komik = 5, total buku = 14,
+                            dan diambil 4 buku.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="step">
+                    <span class="step-number">02</span>
+                    <div class="step-content">
+                        <h5>Ruang sampel</h5>
+                        <div class="formula">
+                            \[
+                            n(S)=C(14,4)=1001
+                            \]
+                        </div>
+                    </div>
+                </div>
+
+                <div class="step">
+                    <span class="step-number">03</span>
+                    <div class="step-content">
+                        <h5>Kejadian yang diinginkan</h5>
+                        <div class="formula">
+                            \[
+                            n(A)=C(9,2)\times C(5,2)
+                            \]
+                        </div>
+                        <div class="formula">
+                            \[
+                            =36\times10=360
+                            \]
+                        </div>
+                    </div>
+                </div>
+
+                <div class="step">
+                    <span class="step-number">04</span>
+                    <div class="step-content">
+                        <h5>Menghitung peluang</h5>
+                        <div class="formula">
+                            \[
+                            P(A)=\frac{360}{1001}
+                            \]
+                        </div>
+                        <div class="formula">
+                            \[
+                            \approx35{,}96\%
+                            \]
+                        </div>
+                    </div>
+                </div>
+
+                <div class="conclusion">
+                    <strong>Kesimpulan</strong>
+                    <p>
+                        Jadi, peluang terambil tepat 2 novel dan
+                        2 komik adalah <b>sekitar 35,96%</b>.
+                    </p>
+                </div>
+            </div>
+        </article> -->
+
+
+        <!-- SOAL 7
+        <article class="question-card">
+
+            <div class="question-top">
+                <span class="question-number">07</span>
+                <span class="question-tag">PERMUTASI</span>
+            </div>
+
+            <h3 class="question-title">Susunan Pengurus</h3>
+
+            <p class="question-text">
+                Dalam kepanitiaan acara sekolah terdapat 9 calon
+                anggota. Akan dipilih 4 orang untuk menjadi ketua,
+                wakil ketua, sekretaris, dan bendahara.
+                Berapa banyak susunan pengurus yang dapat dibentuk?
+            </p>
+
+            <div class="answer-box">
+                <span class="answer-label">✦ JAWABAN AKHIR</span>
+                <p>3.024 susunan</p>
+            </div>
+
+            <div class="explanation">
+                <h4><span>✦</span> Pembahasan</h4>
+
+                <p class="explanation-intro">
+                    Karena setiap jabatan berbeda, urutan penempatan
+                    orang diperhatikan. Oleh karena itu, kita
+                    menggunakan rumus permutasi.
+                </p>
+
+                <div class="step">
+                    <span class="step-number">01</span>
+                    <div class="step-content">
+                        <h5>Diketahui</h5>
+                        <p>
+                            Jumlah calon \(n=9\) dan jumlah jabatan
+                            \(r=4\).
+                        </p>
+                    </div>
+                </div>
+
+                <div class="step">
+                    <span class="step-number">02</span>
+                    <div class="step-content">
+                        <h5>Rumus permutasi</h5>
+                        <div class="formula">
+                            \[
+                            P(n,r)=\frac{n!}{(n-r)!}
+                            \]
+                        </div>
+                    </div>
+                </div>
+
+                <div class="step">
+                    <span class="step-number">03</span>
+                    <div class="step-content">
+                        <h5>Masukkan nilai</h5>
+                        <div class="formula">
+                            \[
+                            P(9,4)=\frac{9!}{(9-4)!}
+                            \]
+                        </div>
+                        <div class="formula">
+                            \[
+                            =\frac{9!}{5!}
+                            \]
+                        </div>
+                    </div>
+                </div>
+
+                <div class="step">
+                    <span class="step-number">04</span>
+                    <div class="step-content">
+                        <h5>Hitung hasilnya</h5>
+                        <div class="formula">
+                            \[
+                            =9\times8\times7\times6
+                            \]
+                        </div>
+                        <div class="formula">
+                            \[
+                            =3024
+                            \]
+                        </div>
+                    </div>
+                </div>
+
+                <div class="conclusion">
+                    <strong>Kesimpulan</strong>
+                    <p>
+                        Jadi, terdapat <b>3.024 susunan pengurus</b>
+                        yang dapat dibentuk.
+                    </p>
+                </div>
+            </div>
+        </article> -->
+
+
+        <!-- PENUTUP -->
+        <section class="closing-card">
+            <div class="closing-icon">✦</div>
+
+            <h2>Great Job!</h2>
+
+            <p>
+            Tugas telah selesai! 🎉
+            Terima Kasih Sudah Memeriksa Semuanya.
+            Sampai jumpa di tugas-tugas selanjutnya! 
+            </p>
+
+            <button
+                class="back-button"
+                id="backButton"
+                type="button">
+                Kembali ke Atas ↑
+            </button>
+        </section>
+
+    </main>
+
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+        <p>Explore the World of Mathematics ♡ <span></span></p>
+        <p>Probability, Combinations & Permutations</p>
+    </footer>
+
+
+    <!-- JAVASCRIPT -->
+    <script src="script.js"></script>
+
+</body>
+</html>
